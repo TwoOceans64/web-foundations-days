@@ -37,14 +37,14 @@ practice-quicknotes-day1/
 ## 📸 Screenshots
 
 - **Home Page (index.html)**  
-  `[Looks like the result wasn't safe to show. Let's switch things up and try something else!]`  
+  ![Home Page - Input](screenshots/Index1.png)  
   *Shows the note input field and add button.*
 
-  `[Looks like the result wasn't safe to show. Let's switch things up and try something else!]`  
+  ![Home Page - Notes List](screenshots/Index2.png)  
   *Displays the list of saved notes with count.*
 
 - **About Page (about.html)**  
-  `[Looks like the result wasn't safe to show. Let's switch things up and try something else!]`  
+  ![About Page](screenshots/about.png)  
   *Shows the About page with features list, keyboard shortcuts table, and feedback form.*
 
 ---
