@@ -1,3 +1,9 @@
+```markdown
+![Home Page - Input](screenshots/Index1.png)
+![Home Page - Notes List](screenshots/Index2.png)
+![About Page](screenshots/about.png)
+```
+
 # QuickNotes — Web Foundations Day 1 Assignment
 
 ## 📌 Overview
@@ -31,19 +37,19 @@ practice-quicknotes-day1/
 ## 📸 Screenshots
 
 - **Home Page (index.html)**  
-  `Index1.png`  
+  `[Looks like the result wasn't safe to show. Let's switch things up and try something else!]`  
   *Shows the note input field and add button.*
 
-  `Index2.png`  
+  `[Looks like the result wasn't safe to show. Let's switch things up and try something else!]`  
   *Displays the list of saved notes with count.*
 
 - **About Page (about.html)**  
-  `about.png`  
+  `[Looks like the result wasn't safe to show. Let's switch things up and try something else!]`  
   *Shows the About page with features list, keyboard shortcuts table, and feedback form.*
 
 ---
 
-👩‍💻 Credits
-Built by Michaela Browers during Web Foundations Day 1 Assignment.
+## 👩‍💻 Credits
+Built by **Michaela Browers** during *Web Foundations Day 1 Assignment*.
 
 ---
