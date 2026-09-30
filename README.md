@@ -28,5 +28,22 @@ practice-quicknotes-day1/
 3. Use **Live Server** to launch `index.html`.
 4. Navigate between **Home** and **About** using the header links.
 
+## 📸 Screenshots
+
+- **Home Page (index.html)**  
+  `Index1.png`  
+  *Shows the note input field and add button.*
+
+  `Index2.png`  
+  *Displays the list of saved notes with count.*
+
+- **About Page (about.html)**  
+  `about.png`  
+  *Shows the About page with features list, keyboard shortcuts table, and feedback form.*
+
 ---
-```
+
+👩‍💻 Credits
+Built by Michaela Browers during Web Foundations Day 1 Assignment.
+
+---
