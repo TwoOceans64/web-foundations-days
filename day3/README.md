@@ -1,3 +1,5 @@
+# QuickNotes — Web Foundations Day 3 Assignment
+
 ## Overview
 Day 3 focuses on building the **logic layer** of QuickNotes in JavaScript.  
 The HTML page is minimal and simply loads `script.js` with `defer`.  
@@ -23,9 +25,15 @@ console.log(searchNotes("milk"));
 // Expected: [{ id: 1, text: "Buy milk and bread", category: "personal" }]
 ```
 
-## Console Output
-  ![Console Output](screenshots/console.png)
-*Shows adding valid notes, rejecting invalid input, listing notes, and the summary message.*
+## Screenshots
+
+**HTML Page**
+![HTML Page](screenshots/index_html.png) 
+*Shows the minimal HTML page with heading and console instruction.*
+
+**Console Output**
+![Console Output](screenshots/console_output.png) 
+*Demonstrates adding valid notes, rejecting invalid input, listing notes, and the summary message.*
 
 ## Summary
 - Logic is complete and runs entirely in the console.
