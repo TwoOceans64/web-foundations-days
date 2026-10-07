@@ -17,9 +17,23 @@ Notes are saved in localStorage and restored on refresh.
 - **Clear**: Button and Escape key reset textarea and counters.
 - **Theme Toggle**: Switches between light/dark mode and remembers choice.
 
-## Screenshot
+## Screenshots
+
+**Normal View**
 ![Day 4 Interface](screenshots/index_day4.png)  
-*Shows the textarea with text, counters, Clear button, and Dark mode toggle.*
+*Shows textarea with text, counters, Clear button, and Dark mode toggle.*
+
+**Near Character Limit (Dark Mode)**
+![Near Limit Dark Mode](screenshots/near_the_character_limit_dark_mode.png)  
+*Orange warning appears when text length exceeds 180 characters.*
+
+**Over Character Limit**
+![Over Limit](screenshots/Over_the_character_limit.png)  
+*Red bold warning when text exceeds 200 characters.*
+
+**Clear Button**
+![Clear Button](screenshots/clear_button.png)  
+*Textarea and counters reset after pressing Clear.*
 
 ## Summary
 - Notes update live without a submit button.
