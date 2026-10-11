@@ -20,13 +20,13 @@ The app loads users from JSONPlaceholder and displays their name, email, city, a
 ## 📸 Screenshots
 
 **Initial Page**  
-![Users API Page](day5/screenshots/Users-api.png)
+![Users API Page](screenshots/Users-api.png)
 
 **Loaded Users**  
-![Loaded Users](day5/screenshots/loaded-users.png)
+![Loaded Users](screenshots/loaded-users.png)
 
 **No Users Match Filter**  
-![No Users Match](day5/screenshots/no-users-match.png)
+![No Users Match](screenshots/no-users-match.png)
 
 ## 📖 What I Learned
 - How to use `fetch` with async/await and proper error handling.
