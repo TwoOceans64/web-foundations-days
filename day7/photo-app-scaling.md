@@ -26,3 +26,57 @@ Photos should not be stored inside the relational database — they are large bi
 Instead, store them in **object storage** (e.g., S3, Azure Blob) and keep metadata (user, caption, URL) in the database.
 
 ## 🖼️ Architecture Diagram
+
+Users/Clients
+|
+v
+DNS
+|
+v
+CDN (static files, cached images)
+|
+v
+Load Balancer
+|
+┌───────┬───────┐
+v       v       v
+App 1   App 2   App 3
+|       |       |
+|       |       |
+└───────┴───────┘
+|
+Cache (Redis)
+|
+┌───────────────┐
+| Primary DB     |<── Read Replica
+└───────────────┘
+|
+Object Storage (photos)
+|
+Queue → Worker (thumbnails)
+
+Code
+
+## 🛠️ Component Roles
+- **DNS:** Resolves snapshare.com to IPs.  
+- **CDN:** Serves static assets and cached images close to users.  
+- **Load Balancer:** Distributes API requests across app servers.  
+- **App Servers:** Stateless logic for uploads, feeds, authentication.  
+- **Cache (Redis):** Speeds up feed queries and session lookups.  
+- **Primary DB:** Stores metadata (users, follows, photo references).  
+- **Read Replica:** Handles heavy read traffic for feeds.  
+- **Object Storage:** Stores actual photo files and thumbnails.  
+- **Queue + Worker:** Offloads thumbnail generation and other background jobs.
+
+## 📤 Upload Flow
+1. User uploads photo via client.  
+2. Request hits DNS → CDN → Load Balancer → App Server.  
+3. App Server writes metadata to Primary DB.  
+4. Photo stored in Object Storage.  
+5. App Server enqueues thumbnail job.  
+6. Worker consumes job, generates thumbnail, stores in Object Storage.  
+7. Feed queries later read metadata from DB and cached results from Redis.
+
+## ⚖️ Trade‑offs
+- **CDN vs direct storage:** CDN reduces latency but adds cost and complexity.  
+- **Read replicas:** Improve scalability for reads but introduce replication lag, meaning feeds may briefly miss the newest uploads.
